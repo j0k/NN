@@ -27,10 +27,10 @@ learnNN1 =: 4 : 0
 	   'v R'  =. >val
 	   q   =. fa @: (,&v)	NB. fa( * ,v)
 	   dW  =. (q D. 1) a	NB.  dFa/da
-	   nn  =. a;nu
 	   a   =. a + nu * ((nn evalNN1 v) - R) *  (- dW)
+	   nn  =. a;nu
 	 end.
-	 a;nu
+	 nn
 )
 
 faR =: 2: * ]			NB.we want 2 learn it
